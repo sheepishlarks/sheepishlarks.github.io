@@ -1,12 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<style>
+    body {background-color: rgb(210, 166, 219);}
+    h1   {color: rgb(9, 97, 1); text-align: center;}
+    p    {color: rgb(0, 0, 0); text-align: center;}
+</style>
+<title>Amy Chapman - Portfolio</title>
 </head>
+<ul class="sidenav">
+  <li><a class="active" href="#home">Projects</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#">CV</a></li>
+  <li><a href="#">Blog(?)</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+
+    <div id="container">
+        <div id="headerArea", style = "margin-bottom: 25px";>
+            <div id="header" style="height: 200px;"></div>
+        </div>
+
+    <div id="flex">
+
+        <main>
+            <h1>Amy Chapman</h1>
+            <p>sometimes.</p>
+
+            <img src="images\cat.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+        </main>
+    </div></div>
+
+
+
+<style> 
+
+    * 
+    {
+        box-sizing: border-box;
+    }
+
+    #container 
+    {
+        max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+        margin: 0 auto;
+                /* this centers the entire page */
+    }
+    #navcontainer 
+    {
+        max-width: 1000px; 
+    }
+    #header 
+    {
+        max-width: 100%;
+            background-color: #5e4e8c;
+            /* header color here! */
+            height: 150;
+            /* this is only for a background image! */
+            /* if you want to put images IN the header, 
+                you can add them directly to the <div id="header"></div> element! */
+            background-image: var(--header-image);
+            background-size: 100%;
+            order: 1; 
+    }
+    main
+    {
+        background-color: #acecb5;
+        flex: 1; 
+        padding: 20px; 
+        order: 2; 
+    }
+    aside 
+    {
+        background-color: #5e4e8c;
+        float: left;
+        max-width: 200px;
+        padding: 20px; 
+        font-size: smaller;
+        order: 3; 
+    }
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #5e4e8c;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: #acecb5;
+  color: rgb(1, 73, 17);
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: #fabff2;
+  color: rgb(0, 0, 0);
+}
+
+
+
+    @media only screen and (max-width: 900px)
+    {
+        #flex 
+        {
+            flex-wrap: wrap;
+        }
+        
+        ul.sidenav 
+        {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+  
+        ul.sidenav li a 
+        {
+            float: left;
+            padding: 15px;
+        }
+
+        main 
+        {
+            order: 2;
+        }
+        #leftSidebar
+        {
+            order:3; 
+        }
+        #header
+        {
+            order:1;
+        }
+    }
+@media screen and (max-width: 400px) 
+{
+  ul.sidenav li a 
+  {
+    text-align: center;
+    float: none;
+  }
+}
+            
+</style>
 
 </body>
 </html>
