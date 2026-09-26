@@ -3,7 +3,7 @@
 <head>
 <style>
     body {background-color: rgb(210, 166, 219);}
-    h1   {font-family: GelPen; color: rgb(9, 97, 1); text-align: center;}
+    h1   {font-family: playpen-sans; color: rgb(9, 97, 1); text-align: center;}
 	h2   {color: rgb(9, 97, 1); text-align: center;}
 	h3   {color: rgb(1, 97, 58); text-align: center;}
     p    {color: rgb(0, 0, 0); text-align: center;}
@@ -66,14 +66,15 @@
     {
         box-sizing: border-box;
     }
-	@font-face 
+	// <weight>: Use a value from 100 to 800
+	// <uniquifier>: Use a unique and descriptive class name
+
+	.playpen-sans 
 	{
-        font-family: GelPen;
-        src: url(https://github.com/sheepishlarks/sheepishlarks.github.io/blob/main/fonts/GelPenUprightLight.ttf) format('ttf');
-		font-weight: normal;
+		font-family: "Playpen Sans", cursive;
+		font-optical-sizing: auto;
 		font-style: normal;
-		font-display: swap;
-    }
+	}	
 
     #container 
     {
