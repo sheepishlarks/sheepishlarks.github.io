@@ -8,7 +8,7 @@
     body {background-color: rgb(210, 166, 219);}
     h1   {font-family: "Playpen Sans", monospace; color: rgb(9, 97, 1); text-align: center;}
 	h2   {font-family: "Playpen Sans", monospace; color: rgb(9, 97, 1); text-align: center;}
-	h3   {font-family: "Playpen Sans", monospace; color: rgb(1, 97, 58); text-align: center;}
+	h3   {font-family: "Playpen Sans", monospace; color: rgb(0, 0, 0); text-align: center;}
     p    {font-family: "Playpen Sans", monospace; color: rgb(0, 0, 0); text-align: center;}
 	li   {font-family: "Playpen Sans", monospace;}
 	hr.dashed {border-top: 8px dashed #bbb; border-color: rgb(210, 166, 219); border-bottom: 0px;}
@@ -55,7 +55,18 @@
 			<p>Experience a cute and occult birthday party gone wrong in...</p>
 			<p>✧ DEMON SLUMBER PARTY ✧</p>
 			<p>Made for our 3rd year professional project, and expanded on in DARE academy. I programmed multiple microgames, with mechanics ranging from simple fighting game style combat and npc behaviour, to a 2000s style dress up game. I also handled the controller support.</p>
+			<h3>Skills: Unreal Engine 5, working in a team with other disciplines, releasing a game.</h3>
 			
+			<a><img a src="images\lanternGif.gif" alt="gif of a lantern in a dark room. when the lantern approaches a large figure a red light turns on" class= "gamegif" style="max-width:100%;height:auto;" /><span>Learn More!</span></a>
+			<h2>Lantern Mechanic</h2> 
+			<p>Inspired by Outer Wilds: Echoes of the Eye</p>
+			<p>Made for my 3rd year game mechanics class. A lantern which can be toggled between two modes to solve puzzles, and turned on and off to avoid notice.</p>
+			<h3>Skills: Unreal Engine 5, C++</h3>
+			
+			<a><img a src="images\gabagif.gif" alt="gif of a cartoon ghost doing simple platforming" class= "gamegif" style="max-width:100%;height:auto;" /><span>Learn More!</span></a>
+			<h2>Gabaghoul's Ghostly Adventure </h2> 
+			<p>Group project in 2nd year, made with the PS5 devkits. I mainly handled audio, and haptic feedback with the controllers</p>
+			<h3>Skills: C++, console development, audio programming</h3>
 			
 			<hr class="dashed">
 			<h1>Uni Projects</h1> 
@@ -131,17 +142,25 @@
 
 	a span 
 	{
-		display: none;
 		position: absolute;
-		bottom: 0;
+		bottom: 15px;
+		left: 0;
+		text-align: center;
 		width: 100%;
-		padding: 10px;
-		background: rgba(255,255,255,.8);
+		box-sizing: border-box;
+		background: white;
+		color: black;
+		padding: 5px 10px;
+		font-size: 20px;
+		opacity: 0;
+		transform: translateY(100px);
+		transition: transform 0.4s ease, opacity 0.5s ease;
 	}
 
 	a:hover span 
 	{
-		display: block
+		opacity: 1;
+		transform: none;
 	}
 	
 
