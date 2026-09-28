@@ -21,7 +21,7 @@
 <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
-/*sidebar*/
+<!-- sidebar -->
 <ul class="sidenav">
   <li><a class="active" href="index.html">Projects</a></li>
   <li><a href="about.html">About</a></li>
@@ -85,4 +85,91 @@
         font-size: smaller;
         order: 3; 
     }
+	
+	ul.sidenav 
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 15%;
+		background-color: #5e4e8c;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	ul.sidenav li a 
+	{
+		display: block;
+		color: #ffffff;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+ 
+	ul.sidenav li a.active 
+	{
+		background-color: #acecb5;
+		color: rgb(1, 73, 17);
+	}
+
+	ul.sidenav li a:hover:not(.active) 
+	{
+		background-color: #fabff2;
+		color: rgb(0, 0, 0);
+	}
+
+
+
+    @media only screen and (max-width: 900px)
+    {
+        #flex 
+        {
+            flex-wrap: wrap;
+        }
+		.headerImage
+		{
+			position: relative; 
+			top:0;
+		}
+        
+        ul.sidenav 
+        {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+  
+        ul.sidenav li a 
+        {
+            float: left;
+            padding: 15px;
+        }
+
+        main 
+        {
+            order: 2;
+        }
+        #leftSidebar
+        {
+            order:3; 
+        }
+        #header
+        {
+            order:1;
+        }
+		img
+		{
+			max-width: 100%
+			height: auto; 
+		}
+
+    }
+@media screen and (max-width: 400px) 
+{
+  ul.sidenav li a 
+  {
+    text-align: center;
+    float: none;
+  }
+}
 </style>
