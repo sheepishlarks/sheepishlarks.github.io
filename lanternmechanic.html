@@ -39,15 +39,23 @@
     <div id="flex">
 
         <main>
-            <h1>Gabaghoul's Ghostly Adventure</h1>
-			<p>I worked on this project as part of a team of four programmers, in a class about games programming and system architecture. This class involved developing for console, specifically using PS5 devkits and software.</p>
+            <h1>Lantern Mechanic</h1>
+			<p>I worked on this as a solo project for a class about designing and programming a mechanic in Unreal Engine 5, using C++. I was inspired by the lantern in Outer Wilds: Echoes of the Eye- as such, there may be spoilers ahead! I chose this mechanic because I love how a seemingly simple tool has so many secrets. This project was mainly centered around learning Unreal, practising C++, and improving my mechanic design skills.</p>
 			
-			<h2>Programming Responsibilites</h2> 
-			<h3>Audio</h3>
-			<p>I handled the audio implementation for the project. This involved using Playstation's audio middleware to create sound banks, and then implementing those sounds in a way that made the game feel responsive.</p>
+			<h2>Mechanics</h2> 
+			<h3>Toggleable Beams</h3>
+			<p>The player can change the diameter of the light they are casting, either a circle around them or a narrow beam which allows them to interact with puzzle items such as doors. The light can also be turned off to plunge the player into darkness.</p>
 			
-			<h3>Haptic Feedback</h3> 
-			<p>I also handled implementating controller vibrations, in order to give the player quick and enjoyable feedback upon taking actions.</p>
+			<h3>Wireframe Mode</h3> 
+			<p>When the player places down the lantern, there is a circle around it in which they are still within its light. If  they leave that radius, they will be put into 'wireframe mode', completely changing the visuals of the game. Everything is now bright. Some objects may only be visible in wireframe mode, so the player will have to make careful use of it to navigate.</p>
+			
+			<h3>Enemy Detection</h3> 
+			<p>If the player is emitting any light when they walk into range of the enemy, they are 'spotted'.</p> 
+			
+			<h3>Refuelling</h3> 
+			<p>The lantern has limited fuel, and when this runs out it turns off automatically. The player must find refuelling stations to keep it full.</p> 
+			
+			<p>I am currently working on expanding this mechanic as a personal project. Aside from some polish, my major goals are to give the 'enemy' actual behaviour for the player to avoid, and to design more puzzles and levels to illustrate the mechanic better.</p> 
 			
         </main>
     </div></div>
