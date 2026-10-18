@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+<style>
+    body {background-color: #202035;}
+    h1   {font-family: "Playpen Sans", monospace; color: #e6e6ec; text-align: center;}
+	h2   {font-family: "Playpen Sans", monospace; color: #e6e6ec; text-align: center;}
+	h3   {font-family: "Playpen Sans", monospace; color: #e6e6ec; text-align: center;}
+    p    {font-family: "Playpen Sans", monospace; color: #e6e6ec; text-align: center;}
+	li   {font-family: "Playpen Sans", monospace;}
+	hr.dashed {border-top: 8px dashed #bbb; border-color: rgb(210, 166, 219); border-bottom: 0px;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amy Chapman - Eigengrau</title>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<!-- sidebar -->
+<ul class="sidenav">
+  <li><a href="index.html">Projects</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="https://docs.google.com/document/d/1IQWLunKZlM24someafS4snHOyHLU_pQwn7khcvxczWI/edit?usp=sharing">CV</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<body>
+	<div id="container">
+        <div id="headerArea", style = "margin-bottom: 25px";>
+            <div id="header" style="height: 100%"; href="index.html"><img src="images\ghostHeader.png" alt="header image" style="max-width:100%;height:150;margin-bottom" class = "headerImage"></div>
+			
+        </div>
+
+    <div id="flex">
+
+        <main>
+            <h1>Eigengrau</h1>
+			<p>I worked on this project as part of Abertay's Accessibili-Tay Game Jam, in a team of 5 people, including programmers and designers. </p>
+			<p>Eigengra is a parser game about exploring a dark house and experiencing the objects in it without sight. It has high contrast text, text to speech, and speech to text options for accessibility. </p>
+			
+			<h2>Programming Responsibilites</h2> 
+			<h3>Parser</h3>
+			<p>I implemented the input functionality and handling for the game.</p>
+			
+			<h3>Gameplay Logic</h3> 
+			<p>I also handled the responses to gameplay actions, programming the logic for what should happen when the player types in certain words.</p> 
+			
+        </main>
+    </div></div>
+</body>
+
+<style> 
+	root
+	{
+		--backgroundimage: <img src="images\stars.jpg" alt="starry background";>
+		--headerimage: <img src="images\darkHeader.png" alt="header image" style="max-width:100%;height:auto;">
+	}
+    * 
+    {
+        box-sizing: border-box;
+    }
+
+    #container 
+    {
+        max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+        margin: 0 auto;
+                /* this centers the entire page */
+    }
+	
+	main
+    {
+        background-color: #aec6cf;
+        flex: 1; 
+        padding: 20px; 
+        order: 2; 
+    }
+	
+	aside 
+    {
+        background-color: #aec6cf;
+        float: left;
+        max-width: 200px;
+        padding: 20px; 
+        font-size: smaller;
+        order: 3; 
+    }
+	
+	ul.sidenav 
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 15%;
+		background-color: #aec6cf;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	ul.sidenav li a 
+	{
+		display: block;
+		color: rgb(0, 0, 0);
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+ 
+	ul.sidenav li a.active 
+	{
+		background-color: #acecb5;
+		color: rgb(1, 73, 17);
+	}
+
+	ul.sidenav li a:hover:not(.active) 
+	{
+		background-color: #bbedff;
+		color: rgb(0, 0, 0);
+	}
+	
+	iframe
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.gamegif
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
+    @media only screen and (max-width: 900px)
+    {
+        #flex 
+        {
+            flex-wrap: wrap;
+        }
+		.headerImage
+		{
+			position: relative; 
+			top:0;
+		}
+        
+        ul.sidenav 
+        {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+  
+        ul.sidenav li a 
+        {
+            float: left;
+            padding: 15px;
+        }
+
+        main 
+        {
+            order: 2;
+        }
+        #leftSidebar
+        {
+            order:3; 
+        }
+        #header
+        {
+            order:1;
+        }
+		img
+		{
+			max-width: 100%
+			height: auto; 
+		}
+		iframe
+		{
+			max-width: 100%; 
+			max-height: 100%; 
+		}
+	}	
+
+    
+@media screen and (max-width: 400px) 
+{
+  ul.sidenav li a 
+  {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
